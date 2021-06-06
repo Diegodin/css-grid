@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-GRID</title>
+    <title>3-GRID</title>
     <style>
         .box{
             background-color: blueviolet;
@@ -15,23 +15,19 @@
 
         .container{
             /* height: 100vh; */
+            margin-top: 100px;
             display: grid;
-            /* grid-template-columns: 50% 30% 20%; */
-            /* column-gap: 10px;
-            row-gap: 20px; */
-            grid-gap: 20px; /*tamañoDeEspaciado*/
-            /* grid-template-columns: 1fr 2fr 1fr; */
-            /* grid-template-rows: 2fr 1fr 3fr; */
-            grid-template-columns: repeat(2,1fr);/*repeat(cantidadDeColumnas,tamañoDeColumnas)*/
-            grid-template-rows: 2fr 1fr 2fr; /*tamañoDeFilas*/
-            grid-auto-rows: 3fr; /*tamañoDeFilaPredeterminado */
-            
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .box1{
+            grid-area:1/1/4/3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">1</div>
+        <div class="box box1">1</div>
         <div class="box">2</div>
         <div class="box">3</div>
         <div class="box">4</div>
